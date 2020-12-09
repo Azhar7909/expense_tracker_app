@@ -58,7 +58,7 @@ export default function ExpenseTracker() {
           </div>
         </div>
         <input
-          className="pad-7px width-100 shadow bg-darkblue color-white curser-pointer"
+          className="pad-7px width-100 shadow bg-darkblue color-white curser-pointer border-none outline-none"
           type="button"
           value="Add Transaction"
         />

@@ -48,6 +48,9 @@
 .out-line-darkcyan{
   outline-color: darkcyan;
 }
+.outline-none{
+  outline: none;
+}
 
 
 /* SHADOW */
