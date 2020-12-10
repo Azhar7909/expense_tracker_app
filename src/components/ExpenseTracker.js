@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import {TransactionsContext} from '../global/TransactionsContext';
 
 export default function ExpenseTracker() {
-  const transactions = [
-    { desc: "Cash", amount: 190 },
-    { desc: "Book", amount: 100 },
-    { desc: "Camera", amount: 10 },
-  ];
+  const {Transations} = useContext(TransactionsContext)
+  console.log('use',Transations);
   const date = Date();
-  console.log(date);
   return (
     <div className="container shadow">
       <h2 className="text-center">Expense Tracker App</h2>
@@ -65,7 +62,7 @@ export default function ExpenseTracker() {
       </form>
       <h4 className="pad-bottom-7px hr text-color">History</h4>
       <ul className="list-style-none">
-        {transactions.map((trans, ind) => {
+        {Transations.map((trans, ind) => {
           return (
             <li
               key={ind}
