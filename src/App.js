@@ -1,12 +1,9 @@
-import './App.css';
-import ExpenseTracker from './components/ExpenseTracker';
-import { TransactionProvider } from './global/TransactionsContext';
+import "./App.css";
+import ExpenseTracker from "./components/ExpenseTracker";
 
 function App() {
   return (
-    <TransactionProvider>
       <ExpenseTracker />
-    </TransactionProvider>
   );
 }
 
